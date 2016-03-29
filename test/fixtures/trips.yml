@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  start: MyString
+  dest: MyString
+  car: MyString
+  seats: MyString
+  day: MyString
+  time: MyString
+  phone: MyString
+
+two:
+  name: MyString
+  start: MyString
+  dest: MyString
+  car: MyString
+  seats: MyString
+  day: MyString
+  time: MyString
+  phone: MyString
