@@ -7,12 +7,12 @@
 			
 			<div class= "card card_full">
 				<div class="card_inner">
-					<h2><%= trip.name %></h2>
-					<div class="inline">
-					  <h4 style="float:left"><%= trip.start %>&nbsp to &nbsp</h4>
-					  <h4 style="float:right"><%= trip.dest %></h4>
-				    </div>
 					
+					<div class="inline">
+					  <h2 style="float:left"><%= trip.start %>&nbsp to &nbsp</h2>
+					  <h2 style="float:right"><%= trip.dest %></h2>
+				    </div>
+					<h4><%= trip.name %></h4>
 					
 
 						<p ><strong>Car</strong>:<%= trip.car %></p>
@@ -23,7 +23,7 @@
 					    <br>
 					    <h5>Contact:&nbsp &nbsp<%=trip.phone %></h5>
 					</div>
-					<button>Book</button>
+					<button>Contact</button>
 					<br>
 					<br>
 					<%= link_to 'Edit', edit_trip_path(trip) %>
