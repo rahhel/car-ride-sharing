@@ -1,41 +1,41 @@
-<p id="notice"><%= notice %></p>
+<% @trips.each do |trip| %>
+<section class='work'>
+	
+	<div class='wrapper'>
+		
+		<div class='row'>
+			
+			<div class= "card card_full">
+				<div class="card_inner">
+					<h2><%= trip.name %></h2>
+					<div class="inline">
+					  <h4 style="float:left"><%= trip.start %>&nbsp to &nbsp</h4>
+					  <h4 style="float:right"><%= trip.dest %></h4>
+				    </div>
+					
+					
 
-<h1>Listing Trips</h1>
+						<p ><strong>Car</strong>:<%= trip.car %></p>
+					    <p ><strong>Seats</strong>:<%= trip.seats %></p>
+					<div class-"inline">
+						<p style="float:left"><strong>Day</strong>:<%= trip.day %></p>
+					    <h3 style="float:right"><%= trip.time %></h3>
+					    <br>
+					    <h5>Contact:&nbsp &nbsp<%=trip.phone %></h5>
+					</div>
+					<button>Book</button>
+					<br>
+					<br>
+					<%= link_to 'Edit', edit_trip_path(trip) %>
+					<%= link_to 'Destroy', trip, method: :delete, data: { confirm: 'Are you sure?' } %>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Start</th>
-      <th>Dest</th>
-      <th>Car</th>
-      <th>Seats</th>
-      <th>Day</th>
-      <th>Time</th>
-      <th>Phone</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
+			    </div>
+			
 
-  <tbody>
-    <% @trips.each do |trip| %>
-      <tr>
-        <td><%= trip.name %></td>
-        <td><%= trip.start %></td>
-        <td><%= trip.dest %></td>
-        <td><%= trip.car %></td>
-        <td><%= trip.seats %></td>
-        <td><%= trip.day %></td>
-        <td><%= trip.time %></td>
-        <td><%= trip.phone %></td>
-        <td><%= link_to 'Show', trip %></td>
-        <td><%= link_to 'Edit', edit_trip_path(trip) %></td>
-        <td><%= link_to 'Destroy', trip, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+		    </div>
+    
+	  </div>
+	<%end %>
+</div>
+</section>
 
-<br>
-
-<%= link_to 'New Trip', new_trip_path %>

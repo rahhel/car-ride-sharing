@@ -95,3 +95,48 @@ html {
   background-size: cover;
 }
 
+
+*{
+  box-sizing: border-box;
+}
+
+
+.wrapper{
+  width: 1000px;
+  max-width:100%;
+  margin: 0 auto;
+
+}
+
+.work{
+  padding: 5em 0;
+  background: #414148;
+  height:1800px;
+
+  .card{
+    background: #FFFFFF;
+    border-radius: .35em;
+    height:450px;
+    display: table;
+
+  }
+  .card_full{
+    width: 100%;
+     background: #FFFFFF;
+    border-radius: .35em;
+    height:300px;
+    display: table;
+  }
+  .card_inner{
+    display:table-cell;
+    verticle-align: middle;
+    height:100%;
+    padding:1.5em 12%;
+
+  }
+  .inline{
+    display: inline-table;
+    position: relative;;
+  }
+}
+
